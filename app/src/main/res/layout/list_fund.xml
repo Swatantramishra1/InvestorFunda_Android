@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:paddingBottom="15dp" android:paddingTop="10dp"
+        android:paddingRight="5dp" android:paddingLeft="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:textSize="15dp"
+            android:id="@+id/title"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:textSize="14dp"
+            android:id="@+id/option"
+            android:layout_marginTop="5dp"
+            android:text=""/>
+        <TableLayout
+            android:id="@+id/table2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Nav"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView android:gravity="center_horizontal"
+                    android:text="Return(%)3 Yr"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:background="@drawable/border"
+                    android:textStyle="bold" />
+               <!-- <TextView android:gravity="center_horizontal"
+                    android:text="Rating By Crisil"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:background="@drawable/border"
+                    android:textStyle="bold" />-->
+                <TextView android:gravity="center_horizontal"
+                    android:text="Analysis"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:background="@drawable/border"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_row_image">
+                <TextView android:gravity="center_horizontal"
+                    android:text="388.23"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:id="@+id/nav"
+                    android:textColor="#424242"
+                    android:textSize="12dp"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/returnYear"
+                    android:textSize="12dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="4%" />
+               <!-- <TextView android:gravity="center_horizontal"
+                    android:text="2"
+                    android:padding="5dp"
+                    android:id="@+id/rateCrisil"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />-->
+                <ImageView
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:id="@+id/analysis"
+                    android:textColor="#424242"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/bar_graph"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="10dp" android:paddingTop="5dp"
+            android:paddingRight="5dp" android:paddingLeft="5dp"
+            android:layout_weight="100"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="number"
+                android:background="@drawable/row_border"
+                android:textSize="13dp"
+                android:id="@+id/amount"
+                android:layout_weight="45"
+                android:padding="5dp"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="55"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:background="@drawable/bottom"
+                android:id="@+id/select"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

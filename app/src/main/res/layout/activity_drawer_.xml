@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/DrawerLayout_one"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar_one"
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:popupTheme="@style/AppTheme" />
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/ll1"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="100"
+                    android:layout_height="120dp">
+                    <ImageView android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:src="@drawable/home_page_text" />
+                    <ImageView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:src="@drawable/home_girl" />
+                </LinearLayout>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/investText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/cardview_dark_background"
+                    android:gravity="center_horizontal"
+                    android:text="Investing made simple \n LIFE MADE EASY "/>-->
+
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:layout_weight="1.0">
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS1"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/startSip"
+                    android:drawableTop="@drawable/ic_startsip"
+                    android:layout_weight="1.0" />
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS2"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/planYour"
+                    android:drawableTop="@drawable/ic_planyourfuture"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS3"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/selectFund"
+                    android:drawableTop="@drawable/ic_investnow"
+                    android:layout_weight="1.0" />
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS4"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/ontime"
+                    android:drawableTop="@drawable/ic_selectfunds"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS5"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/saveTax"
+                    android:drawableTop="@drawable/ic_savetaxes"
+                    android:layout_weight="1.0" />
+                <Button android:textColor="@color/cardview_dark_background"
+                    android:textSize="12sp"
+                    android:id="@+id/txtS6"
+                    android:background="@drawable/offeritemlayout"
+                    android:paddingTop="15.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/calc"
+                    android:drawableTop="@drawable/ic_calculators"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:gravity="bottom|center"
+                android:background="#ff4b0082"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+   <android.support.v7.widget.RecyclerView
+        android:layout_gravity="left"
+        android:id="@+id/RecyclerView_one"
+        android:background="#ffffffff"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

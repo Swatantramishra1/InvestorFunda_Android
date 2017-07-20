@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView android:background="#fff"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/child_education_dash_board"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#424242"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="Investment Summary"
+        android:layout_height="wrap_content" />
+     <TableLayout
+            android:id="@+id/table2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView android:gravity="right"
+                   android:layout_weight="30"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+               <TextView android:gravity="center_horizontal"
+                   android:text="SIP"
+                   android:layout_weight="20"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+               <TextView android:gravity="center_horizontal"
+                   android:text="Lumpsum"
+                   android:layout_weight="20"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+               <TextView android:gravity="center_horizontal"
+                   android:text="All"
+                   android:layout_weight="20"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+           </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+               <TextView android:gravity="left"
+                  android:text="Cost of Investment"
+                   android:layout_weight="30"
+                   android:padding="5dp"
+                   android:textColor="#424242"
+                   android:textSize="12dp"
+                  android:background="@drawable/row_border"
+                  android:textStyle="bold" />
+               <TextView
+                  android:gravity="center_horizontal"
+                  android:textStyle="bold"
+                   android:padding="5dp"
+                   android:layout_weight="20"
+                   android:textSize="12dp"
+                   android:textColor="#424242"
+                   android:background="@drawable/row_border"
+                  android:text="500" />
+                <TextView android:gravity="center_horizontal"
+                    android:text="000"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="500" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <TextView android:gravity="left"
+                    android:text="Total Divided Reinvest"
+                    android:layout_weight="30"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:text="0" />
+                <TextView android:gravity="center_horizontal"
+                    android:text="0"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <TextView android:gravity="left"
+                    android:text="Current Values of investment"
+                    android:layout_weight="30"
+                    android:padding="5dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:text="462.89" />
+                <TextView android:gravity="center_horizontal"
+                    android:text="0"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="462.89" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <TextView android:gravity="left"
+                    android:text="Total Profit/Loss"
+                    android:layout_weight="30"
+                    android:padding="5dp"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="-37.11" />
+                <TextView android:gravity="center_horizontal"
+                    android:text="0"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:layout_weight="20"
+                    android:textColor="#424242"
+                    android:background="@drawable/row_border"
+                    android:text="-37.11" />
+            </TableRow>
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/border">
+               <TextView android:gravity="left"
+                   android:text="Absolute Return"
+                   android:layout_weight="30"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+               <TextView
+                   android:gravity="center_horizontal"
+                   android:textStyle="bold"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:layout_weight="20"
+                   android:background="@drawable/border"
+                   android:text="-7.42" />
+               <TextView android:gravity="center_horizontal"
+                   android:text="0"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:layout_weight="20"
+                   android:background="@drawable/border"
+                   android:textStyle="bold" />
+               <TextView
+                   android:gravity="center_horizontal"
+                   android:textStyle="bold"
+                   android:padding="5dp"
+                   android:textColor="#fff"
+                   android:textSize="12dp"
+                   android:layout_weight="20"
+                   android:background="@drawable/border"
+                   android:text="-7.42" />
+           </TableRow>
+        </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/table2"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#424242"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="Investment Graph"
+            android:layout_height="wrap_content" />
+       <!-- <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/graph" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#424242"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="Asset Allocation"
+            android:layout_height="wrap_content" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart"
+            android:layout_marginTop="5dp"
+            android:layout_height="200dp"
+            android:layout_width="400dp"  />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#424242"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="Investment Portfolio"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/portfolio"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" >
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:gravity="left"
+            android:layout_weight="40"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:text="Funds Name"
+            android:textSize="12dp"
+            android:background="@drawable/border"
+            android:textStyle="bold" />
+        <TextView android:gravity="center_horizontal"
+            android:text="Inv.Cost"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:background="@drawable/border"
+            android:textStyle="bold" />
+        <TextView android:gravity="center_horizontal"
+            android:text="Cur.Value"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:background="@drawable/border"
+            android:textStyle="bold" />
+        <TextView android:gravity="center_horizontal"
+            android:text="Profit/Loss"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:background="@drawable/border"
+            android:textStyle="bold" />
+        <TextView android:gravity="center_horizontal"
+            android:text="Action"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:background="@drawable/border"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+        <TextView android:gravity="left"
+            android:text="Axis Long Term \n Equity Fund(G)"
+            android:layout_weight="40"
+            android:padding="5dp"
+            android:textColor="#424242"
+            android:textSize="12dp"
+            android:background="@drawable/row_border"
+            android:textStyle="bold" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="#424242"
+            android:textSize="12dp"
+            android:layout_weight="15"
+            android:background="@drawable/row_border"
+            android:text="\n500" />
+        <TextView android:gravity="center_horizontal"
+            android:text="\n000"
+            android:padding="5dp"
+            android:textColor="#424242"
+            android:textSize="12dp"
+            android:layout_weight="15"
+            android:background="@drawable/row_border"
+            android:textStyle="bold" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="#424242"
+            android:textSize="12dp"
+            android:layout_weight="15"
+            android:background="@drawable/row_border"
+            android:text="\n500" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12dp"
+            android:layout_weight="15"
+            android:background="@drawable/row_border"
+            android:text="\nInvest" />
+    </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

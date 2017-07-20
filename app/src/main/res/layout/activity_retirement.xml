@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical"
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_c" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <!--<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <EditText android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="child's education" android:drawableLeft="@drawable/back" />
+            <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>-->
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <ImageView android:layout_width="match_parent" android:id="@+id/img" android:layout_height="120dp" android:layout_marginRight="10dp" android:src="@drawable/retire" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:layout_marginTop="5dp" android:layout_below="@+id/img" android:textStyle="bold" android:textColor="@color/common_plus_signin_btn_text_light_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:text="Gift yourself the best retirement" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:layout_height="wrap_content" >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Give Your Goal A Name" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/currentAgeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="8dp">
+                    <EditText
+                        android:id="@+id/currentAge"
+                        android:layout_width="match_parent"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Current Age" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/retireAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="8dp">
+                    <EditText
+                        android:id="@+id/retirementAge"
+                        android:layout_width="match_parent"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Retirement Age" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/investAmount"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/rupee_icon"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="@string/wish_to_invest" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/after"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/afterRetire"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/percentage_by" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/expenditureText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/expenditure"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Your current monthly expenditure?" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inflateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/estimatedInflation"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:hint="Estimated annual inflation rate from now (%)" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/proceed"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:background="@color/text_color"
+                android:text="Calculate"  />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

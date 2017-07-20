@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/bannerImg"
+                android:src="@drawable/one_time_"
+                android:layout_height="150dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/bannerImg"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:id="@+id/bannerText"
+                android:layout_height="75dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_below="@+id/bannerText"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/quesHow"
+                    android:layout_marginLeft="10dp"
+                    android:text="For How Long You Wish To Stay Invested?"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/years"
+                    android:layout_marginTop="3dp"
+                    android:padding="3dp"
+                    android:background="@drawable/bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/quesHow"
+                    android:layout_height="wrap_content"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/amountText"
+                    android:layout_below="@+id/years"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/oneInvestAmount"
+                        android:layout_width="match_parent"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:drawableLeft="@drawable/rupee_icon"
+                        android:layout_height="wrap_content"
+                        android:hint="Your One Time Investment Is"
+                        android:inputType="number"
+                        android:maxLines="1"/>
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/amountText"
+                    android:id="@+id/quesRisk"
+                    android:layout_marginLeft="10dp"
+                    android:text="Choose Your Risk Profile"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/riskType"
+                    android:layout_below="@+id/quesRisk"
+                    android:layout_marginTop="3dp"
+                    android:padding="3dp"
+                    android:background="@drawable/bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/accent_material_dark"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/oneTimeInvest"
+                android:textColor="#fff"
+                android:text="Invest Now"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

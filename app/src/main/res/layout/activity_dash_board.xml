@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/DrawerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        app:popupTheme="@style/AppTheme" />
+    <RelativeLayout android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="2dp"
+            android:id="@+id/topTitle"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/topOne"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:padding="5dp"
+                    android:id="@+id/totalLinear"
+                    android:background="@drawable/shape_left"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/totalText"
+                        android:text="Total Amount"
+                        android:layout_weight="40"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/totalAmount"
+                        android:text="0"
+                        android:layout_weight="60"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/shape_left"
+                    android:id="@+id/currentLayout"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/CurrentValueText"
+                        android:text="Current Value"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/currentTotalValue"
+                        android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_below="@+id/topOne"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/shape_left"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/lossText"
+                        android:text="Profit/Loss" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/totalProfitLoss"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topTitle"
+            android:layout_marginTop="3dp"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:id="@+id/scheme"/>
+        <ProgressBar
+            android:layout_width="52dp"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="52dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#424242"
+            android:textSize="17sp"
+            android:id="@+id/welcome"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome to InvestFunda"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_gravity="left"
+        android:id="@+id/RecyclerView"
+        android:background="#ffffffff"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

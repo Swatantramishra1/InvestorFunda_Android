@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.knowledgeflex.investfund">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ApplicationIndiainvest"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Login"
+            android:noHistory="true"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Drawer_Activity"
+            android:label="Investorfunda"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Registration"
+            android:label="Register"
+            android:noHistory="true"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Partners_Login"
+            android:label="Partner Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Gridview_Activity"
+            android:label="PLAN FOR YOUR GOAL"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Portfolio"
+            android:label="@string/title_activity_portfolio"
+            android:parentActivityName=".Drawer_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Drawer_Activity" />
+        </activity>
+        <activity
+            android:name=".grid.Child_E"
+            android:label="CHILD&apos;S EDUCATION"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".grid.Retirement"
+            android:label="RETIREMENT"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".grid.Child_Marriage"
+            android:label="CHILD&apos;S MARRIAGE"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".grid.Card_Activity"
+            android:label="Investorfunda"
+            android:noHistory="true"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Child_Result"
+            android:label="PORTFOLIO"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".InvestNow_Activity"
+            android:label="Select Funds"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Retirement_Result"
+            android:label="SIP"
+            android:noHistory="true"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Child_E2"
+            android:label="Child’S Education Plan"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".ChildEducationDashBoard"
+            android:label="Dashboard"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".invest.MutualFunds"
+            android:label="@string/title_activity_mutual_funds"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.NomineeUpdate"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".StartSIP"
+            android:label="START SIP"
+            android:noHistory="true"
+            android:theme="@style/Activity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".invest.FundFilter"
+            android:label="Filter"
+            android:noHistory="true" />
+        <activity
+            android:name=".invest.FilterPage"
+            android:label="Filter Page"
+            android:noHistory="true" />
+        <activity
+            android:name=".grid.BuyHome"
+            android:label="BUY A HOUSE"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".grid.BuyCar"
+            android:label="BUY A CAR"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".grid.Tour"
+            android:label="PLAN A HOLIDAY"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".tax.SaveTaxes"
+            android:label="Save Taxes"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utils.FundDialog"
+            android:label="Confirmation of proceed"
+            android:theme="@style/MyAlertDialogStyle" />
+        <activity android:name=".DashBoard" />
+        <activity
+            android:name=".GoalResult"
+            android:noHistory="true"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Comparison"
+            android:label="Comparison"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".OneTimeInvestment"
+            android:label="One Time Investment"
+            android:theme="@style/Activity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".invest.OurTopFundFilter"
+            android:label="Select Funds Category"
+            android:theme="@style/MyAlertDialogStyle" />
+        <activity
+            android:name=".invest.Comparison_Dialog"
+            android:label="Selected Fund"
+            android:theme="@style/MyAlertDialogStyle"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Contact"
+            android:label="Contact Us"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Privacy"
+            android:label="Privacy Policy"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Terms"
+            android:label="Terms of Service"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".Calculators"
+            android:label="CALCULATORS"
+            android:theme="@style/Activity" />
+        <activity
+            android:name=".utils.SelectDate"
+            android:label="SELECT SIP DATE"
+            android:theme="@style/MyAlertDialogStyle" />
+        <activity android:name=".PortfolioDialog" android:label="Confirmation of Scheme" android:theme="@style/MyAlertDialogStyle"
+            android:windowSoftInputMode="stateAlwaysHidden" ></activity>
+    </application>
+
+</manifest>

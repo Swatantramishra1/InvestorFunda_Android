@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/cardview_dark_background"
+        android:id="@+id/rowText"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip" />
+    <View android:background="#ffd9d9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</LinearLayout>

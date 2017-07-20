@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">InvestorFunda</string>
+    <string name="empty_email_login">enter username/email</string>
+    <string name="empty_password_login">enter password</string>
+    <string name="app_name_title">INVESTORFUNDA</string>
+    <string name="loading">Loading......</string>
+    <string name="openDrawer">open</string>
+    <string name="planYour">PLAN FOR YOUR GOAL</string>
+    <string name="saveNext">Save</string>
+    <string name="invest">Invest Now</string>
+    <string name="saveTax">Save Taxes</string>
+    <string name="calc">Calculators</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="selectFund">Select Funds</string>
+    <string name="ontime">One-Time Investment</string>
+    <string name="startSip">Start SIP</string>
+    <string name="start_Sip">START INVESTING</string>
+    <string name="title_activity_portfolio">Profile</string>
+    <string name="closeDrawer">close</string>
+    <string name="action_settings">Settings</string>
+    <string name="childEd">"CHILD'S EDUCATION"</string>
+    <string name="title_activity_mutual_funds">Mutual Funds</string>
+    <string name="select">Select</string>
+    <string name="percentage_by">By what % will the expenses change after your Retirement</string>
+    <string name="term">I / We have read the Offer Document / Scheme Information Document / Statement of Additional Information T&amp;C.</string>
+    <string name="wish_to_invest"><font size="10">Amount I wish to Invest? (In Lumpsum)</font></string>
+    <string-array name="Profession">  </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="footer">2017 © Investorfunda. All Rights Reserved</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="submission">you will receive a payment link on your registered email id. If you have any query please call our customer support</string>
+    <string name="alert_invest">Please complete your profile first after your are eligible to invest </string>
+</resources>

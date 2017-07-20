@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical"
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/ll_c"
+        android:padding="7dp"
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"   android:weightSum="2.0">
+            <LinearLayout android:visibility="gone" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/common_plus_signin_btn_text_light_default" android:gravity="center" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your child needs best education and" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/common_plus_signin_btn_text_light_default" android:gravity="center" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Best education needs the best planning" />
+            </LinearLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="120.0dip" android:src="@drawable/child_edu" android:layout_weight="1.0" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:hint="Give Your Goal A Name" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textAge"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/currentAge"
+                    android:layout_width="match_parent"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Child's Current Age" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textDuration"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/courseDuration"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Duration" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_border"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="3dp"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="60"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="At What Age, He/She Might Go For The Course"
+            android:textSize="15dp"/>
+            <Spinner
+                android:id="@+id/goForCourse"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bottom_border"
+                android:layout_weight="40"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textFee"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/courseFees"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/rupee_icon"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Course Fees Per Year" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textLiving"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/costLiving"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/rupee_icon"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Living Cost Per Years" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textLump"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/lumpSum"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/rupee_icon"
+                android:textSize="15dp"
+                android:text="0"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="How Much You Saved For This Goal(Lumpsum)" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/row_border"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Rate Of Inflation (%)"
+                android:textSize="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/rateInflation"
+                android:textSize="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bottom_border"
+                android:layout_weight="40"
+                android:layout_height="match_parent" >
+            </Spinner>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/proceed"
+            android:textColor="#fff"
+            android:background="@color/text_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="PROCEED" />
+    </LinearLayout>
+</ScrollView>

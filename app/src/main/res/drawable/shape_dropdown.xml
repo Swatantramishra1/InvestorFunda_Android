@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ffffffff" />
+            <stroke android:width="0.049999952dip" android:color="@color/dark_gray" />
+            <padding android:left="2.0dip" android:top="0.0dip" android:right="10.0dip" android:bottom="0.0dip" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="end" android:src="@drawable/drop_arrow" />
+    </item>
+</layer-list>

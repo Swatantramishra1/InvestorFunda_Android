@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#99454545" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical"
+        android:layout_margin="2dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+      <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="#ff660033" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="NOMINEE DETAILS" android:layout_weight="1.2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Name" android:layout_weight="1.2" />
+            <EditText android:textSize="14.0sp" android:gravity="center|left|top" android:id="@+id/accountName" android:background="@drawable/shape" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Date Of Birth" android:layout_weight="1.2" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:id="@+id/etDOB" android:background="@drawable/shape" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:layout_gravity="center_vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Select Relationship" android:layout_weight="1.2" />
+            <Spinner android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center|left|top" android:id="@+id/spnSelectRelationType" android:background="@drawable/shape_dropdown" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:layout_gravity="center_vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Select Type" android:layout_weight="1.2" />
+            <Spinner android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center|left|top" android:id="@+id/spnRiskType" android:background="@drawable/shape_dropdown" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center|left|top" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="% Allocation" android:layout_weight="1.2" />
+            <EditText android:textSize="14.0sp" android:gravity="center|left|top" android:id="@+id/alloc" android:background="@drawable/shape" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.8" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_marginTop="30dp" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:weightSum="2.0">
+            <Button android:textColor="#ffffffff" android:layout_alignParentRight="true" android:id="@+id/nominee_save" android:background="@color/colorPrimary" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/saveNext" />
+            <Button android:textColor="#ffffffff"  android:id="@+id/nominee_cancel" android:background="@color/colorPrimary" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="Cancel" />
+        </RelativeLayout>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

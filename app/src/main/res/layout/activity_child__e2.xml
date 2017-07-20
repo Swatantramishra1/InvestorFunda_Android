@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="child's education" android:drawableLeft="@drawable/back" />
+            <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="HIGHER EDUCATION'S AGE" android:lines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <EditText android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip" android:text="20 YRS" android:lines="2" android:drawableLeft="@drawable/rupees" android:drawableRight="@drawable/edit" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#ff660033" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="INVESTMENT SPLIT" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="EQUITY : 1654" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="DEBT : 1000" android:lines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="35.0dip" android:text="FUNDS NAME" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="35.0dip" android:text="AMOUNT" android:lines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="SBI Regular Fund Dividend BlueChip" android:lines="2" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffd3d3d3" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="EQUITY-LARGE CAP FUNDS" android:lines="2" />
+            </LinearLayout>
+            <EditText android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="top" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="10.0dip" android:text="5" android:lines="2" android:drawableLeft="@drawable/rupees" />
+        </LinearLayout>
+        <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="SBI Regular Fund Dividend BlueChip" android:lines="2" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffd3d3d3" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="EQUITY-LARGE CAP FUNDS" android:lines="2" />
+            </LinearLayout>
+            <EditText android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="top" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="10.0dip" android:text="5" android:lines="2" android:drawableLeft="@drawable/rupees" />
+        </LinearLayout>
+        <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="SBI Regular Fund Dividend BlueChip" android:lines="2" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffd3d3d3" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="EQUITY-LARGE CAP FUNDS" android:lines="2" />
+            </LinearLayout>
+            <EditText android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="top" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="10.0dip" android:text="5" android:lines="2" android:drawableLeft="@drawable/rupees" />
+        </LinearLayout>
+        <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="SBI Regular Fund Dividend BlueChip" android:lines="2" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffd3d3d3" android:gravity="center" android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="EQUITY-LARGE CAP FUNDS" android:lines="2" />
+            </LinearLayout>
+            <EditText android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="top" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="55.0dip" android:layout_marginTop="10.0dip" android:text="5" android:lines="2" android:drawableLeft="@drawable/rupees" />
+        </LinearLayout>
+        <View android:background="#ff4b0082" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="CURRENT COST OF HIGHER EDUCATION" android:lines="2" />
+        <Button android:textSize="13.0sp" android:textColor="@color/dark_gray" android:gravity="center" android:layout_gravity="center" android:id="@+id/submit" android:background="@drawable/background" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="SUBMIT" android:lines="2" android:layout_weight="1.0" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/dark_gray" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="DISCLAIMER" android:lines="2" android:layout_weight="1.0" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <View android:gravity="bottom|center" android:background="#ff660033" android:layout_width="fill_parent" android:layout_height="5.0dip" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</ScrollView>

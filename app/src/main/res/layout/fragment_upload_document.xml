@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingBottom="60dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2.0">
+                <TextView android:textSize="14.0sp"
+                    android:textColor="#ff808080"
+                    android:gravity="center"
+                    android:id="@+id/addressText"
+                    android:background="#ffffffff"
+                    android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Upload Copy of Your Address Details" android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/addressSelect" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="SELECT" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/addressUpload" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="UPLOAD" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="2.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center" android:id="@+id/pancardText" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Upload Copy of Your Pan Card Details" android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/pancardSelect" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="SELECT" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/pancardUpload" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="UPLOAD" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="2.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center" android:id="@+id/signatureText" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Upload Copy of Your Signature" android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/signatureSelect" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="SELECT" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/signatureUpload" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="UPLOAD" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="2.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center" android:id="@+id/checkText" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Upload Copy Cancel Check" android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/checkSelect" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="SELECT" android:layout_weight="1.0" />
+                <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="end" android:id="@+id/checkUpload" android:background="@drawable/shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="UPLOAD" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:textColor="#ffffffff" android:visibility="invisible" android:gravity="center" android:layout_gravity="end" android:id="@+id/upload_save" android:background="@color/colorPrimary" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>

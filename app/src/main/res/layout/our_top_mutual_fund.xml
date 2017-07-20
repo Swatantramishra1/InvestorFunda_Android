@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="EQ"
+        android:textColor="#424242"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_top_border"
+        android:id="@+id/mfTypeName"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/our_top"
+        android:layout_below="@+id/mfTypeName"
+        android:layout_marginTop="7dp"
+        android:background="@color/light_gray"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/our_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_action_filter" />
+    <ProgressBar
+        android:layout_width="52dp"
+        android:id="@+id/progressBarOur"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="52dp" />
+</RelativeLayout>

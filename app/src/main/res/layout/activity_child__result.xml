@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:background="#fff"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <RelativeLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:paddingBottom="7dp"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/sumAmount"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15.0dip"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/minus"
+                    android:padding="5dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_action_minus"
+                    android:layout_height="30.0dip" />
+                <TextView android:textSize="13.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_gray"
+                    android:gravity="center"
+                    android:id="@+id/total"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background"
+                    android:layout_width="100.0dip"
+                    android:layout_height="30.0dip"
+                    android:text="2654"
+                    android:maxLength="10"
+                    android:drawableLeft="@drawable/rupee_icon" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/add"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_white_add"
+                    android:layout_height="30.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:background="@drawable/background_debt"
+                android:layout_width="fill_parent"
+                android:id="@+id/equityDebtLayout"
+                android:layout_below="@+id/sumAmount"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip">
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                       <TextView android:textSize="12.0sp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10.0dip"
+                            android:text="Equity" />
+                        <TextView android:textSize="12.0sp"
+                            android:textColor="#fff"
+                            android:id="@+id/equity"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/rupee_icon"
+                            android:layout_height="wrap_content"
+                            android:text="3000"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="25.0dip"
+                        android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="Debt"/>
+                        <TextView android:textSize="12.0sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:id="@+id/debt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="2654"
+                            android:maxLength="10"
+                            android:drawableLeft="@drawable/rupee_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:id="@+id/goldLayout"
+                        android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="Gold"/>
+                        <TextView android:textSize="12.0sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:id="@+id/gold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="2654"
+                            android:maxLength="5"
+                            android:drawableLeft="@drawable/rupee_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/equityDebtLayout"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15.0dip"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:background="@drawable/scheme_bg_border"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:background="#B71C1C"
+                        android:textSize="12dp"
+                        android:layout_weight="79"
+                        android:padding="7dp"
+                        android:gravity="center_horizontal"
+                        android:text="Scheme Name"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="1dp"
+                        android:background="#FFA726"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="Amount"
+                        android:layout_weight="20"
+                        android:padding="7dp"
+                        android:gravity="center_horizontal"
+                        android:background="#B71C1C"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <com.knowledgeflex.investfund.utils.NonScrollListView
+                    android:layout_width="match_parent"
+                    android:id="@+id/schemeList"
+                    android:layout_below="@+id/title"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_height="wrap_content">
+                </com.knowledgeflex.investfund.utils.NonScrollListView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/schemeList"
+                    android:id="@+id/dateLayout"
+                    android:visibility="gone"
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:text="Date"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/dateText"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_marginTop="-7dp"
+                        android:id="@+id/dateImg"
+                        android:visibility="gone"
+                        android:background="@drawable/bottom"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/terms"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#424242"
+                    android:text="@string/term"
+                    android:layout_below="@+id/dateLayout"/>
+                <Button android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/investNow"
+                    android:layout_below="@+id/terms"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="115.0dip"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="confirm" />
+                <Button android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/changeFunds"
+                    android:layout_below="@+id/terms"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="115.0dip"
+                    android:layout_height="40.0dip"
+                    android:text="changes funds/amount" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

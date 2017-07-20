@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" 
+    android:background="@color/white" 
+    android:layout_width="wrap_content" 
+    android:layout_height="140.0dip" 
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edit"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:text="Edit"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" 
+        android:layout_marginBottom="10.0dip"
+        android:layout_below="@+id/profileImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <TextView android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/name" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="16.0dip"
+            android:text="Om Sai Ram" />
+        <TextView android:textSize="14.0sp"
+            android:textStyle="normal"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/email" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip" 
+            android:layout_marginTop="5.0dip" 
+            android:text="invest_india93@gmail.com" />
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView 
+        android:id="@+id/profileImage" 
+        android:layout_width="70.0dip" 
+        android:layout_height="70.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip" 
+        android:src="@drawable/profile"
+        android:layout_alignParentTop="true" />
+    <View android:background="#ffd9d9d9" 
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip" 
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
